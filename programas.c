@@ -1,34 +1,71 @@
 #include <stdio.h>
 #include <locale.h>
 #include <windows.h>
+
+/*Segue uma lista com 10 exercícios de lógica de programação em C, utilizando as estruturas de controle if, if-else, switch, while, do-while e for. Certifique-se de utilizar os comandos de entrada e saída adequados para receber os dados e exibir os resultados. Não se autossabote! Execute os exercícios com dedicação para alcançar sucesso em seus objetivos.
+
+1. Verificação de Par ou Ímpar
+Escreva um programa que receba um número inteiro do usuário e use a estrutura if-else para verificar se o número é par ou ímpar. O programa deve exibir o resultado correspondente.
+
+2. Calculadora Simples com switch
+Crie um programa que simule uma calculadora simples. O usuário deve inserir dois números e uma operação (adição, subtração, multiplicação ou divisão). Use o switch para realizar a operação correta e exibir o resultado.
+
+3. Verificar Maior de Três Números
+Escreva um programa que receba três números inteiros e use if-else para determinar e exibir qual deles é o maior.
+
+4. Imprimir Números de 1 a 100 (Com for)
+Crie um programa que imprima todos os números de 1 a 100 usando a estrutura for.
+
+5. Soma de Números Pares (Com while)
+Escreva um programa que calcule e exiba a soma de todos os números pares de 1 a 100. Use a estrutura while para realizar a soma.
+
+6. Número Fatorial (Com do-while)
+Escreva um programa que peça ao usuário um número inteiro positivo e calcule o fatorial desse número usando a estrutura do-while. O fatorial de um número n é a multiplicação de todos os números de 1 até ??.
+
+7. Menu de Opções (Com switch)
+Crie um programa que exiba um menu com as seguintes opções:
+
+Verificar se um número é positivo ou negativo.
+Verificar se um número é par ou ímpar.
+Sair do programa. O programa deve usar switch para escolher a opção e realizar a ação correspondente.
+
+8. Cálculo de Média Aritmética
+Escreva um programa que receba quatro notas de um aluno e calcule a média aritmética. O programa deve usar if-else para verificar se a média é maior ou igual a 7.0 e exibir se o aluno está aprovado ou reprovado.
+
+9. Tabuada de um Número (Com for)
+Escreva um programa que peça ao usuário um número inteiro e exiba a tabuada desse número de 1 a 10, usando a estrutura for.
+
+10. Soma de Números até Zero (Com do-while)
+Crie um programa que receba números inteiros do usuário e vá somando esses números. O programa deve parar de pedir números e exibir a soma total quando o usuário inserir o número 0. Use a estrutura do-while para realizar essa tarefa.*/
+
 int main(){
     setlocale(LC_ALL,"Portuguese");
-    //exe 01
+    //Variaveis usado no primeiro programa
     int operacao;
     int n1exe1;
-    //exe 02
+    //Variaveis usado no segundo programa
     float n1exe2,n2exe2;
     char opexe2;
-    //exe 03
+    //Variaveis usada no terceiro programa
     int n1,n2,n3;
 
-    //exe 05
+    //Variaveis usada no quinto programa
     int somaexe5 =0;
     int paresexe5 = 0;
 
-    //exe 06
+    //Variaveis usada no sexto programa
     int fatoexe6, numexe6;
         fatoexe6 = 1;
 
-    //exe07
+    //Variaveis usada no setimo programa
      int opcaoexe7,numeroexe7;
-     //exe08
+     //Variaveis usada no oitavo programa
      float notaexe8,mediaexe8;
 
-     //exe09
+     //Variaveis usada no novo programa
       int numeroexe09, tabuadaexe09;
 
-    //exe10
+    //Variaveis usada no decimo programa
     int numeroexe10;
     int somadorexe10 = 0;
 
@@ -242,7 +279,7 @@ int main(){
 
 }
    
-    Sleep(500);
+    Sleep(500);//Comando para melhor interação do usúario, da uma pausa em milisegundos.
     printf("Finalizando programa...");
 
 
