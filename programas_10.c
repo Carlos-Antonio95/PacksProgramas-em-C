@@ -60,10 +60,10 @@ int main(){
     //Variaveis usada no setimo programa
      int opcaoexe7,numeroexe7;
      //Variaveis usada no oitavo programa
-     float notaexe8,mediaexe8;
+     float notaexe8,mediaexe8=0;
 
      //Variaveis usada no novo programa
-      int numeroexe09, tabuadaexe09;
+      float numeroexe09, tabuadaexe09;
 
     //Variaveis usada no decimo programa
     int numeroexe10;
@@ -74,63 +74,65 @@ int main(){
     {
 
     
-    printf("\nQual questÃ£o deseja ver ? 1 a 10 (Digite 0 para finalizar o programa): ");//Pergunta ao usuario qual questÃ£o ele deseja acessar
+    printf("\nQual questão deseja ver ? 1 a 10 (Digite 0 para finalizar o programa): ");//Pergunta ao usuario qual questÃ£o ele deseja acessar
     scanf("%i",&operacao);
     switch (operacao){
     case 1:
         
-        printf("Digite um nÃºmero verificarei se Ã© Ã­mpa ou par: ");
+        printf("Digite um número verificarei se é ímpar ou par: ");
         scanf("%i",&n1exe1);
         getchar();
         if(n1exe1 % 2 == 0){
-            printf("\nO nÃºmero %i Ã© par.",n1exe1);
+            printf("\nO número %i é par.",n1exe1);
         }else{
-            printf("\nO nÃºmero %i Ã© Ã­mpar.",n1exe1);
+            printf("\nO número %i é í­mpar.",n1exe1);
         } 
     break;
 
     case 2:
-    printf ("Digite o primeiro e segundo nÃºmero: ");
+    printf ("Digite o primeiro e segundo número: ");
     scanf("%f %f",&n1exe2,&n2exe2);
     getchar();
-    printf("Digite a operaÃ§Ã£o aritimetrica que deseja fazer(+ / - *)");
+    printf("Digite a operação aritimetrica que deseja fazer(+ / - *)");
     scanf(" %c",&opexe2);
     switch (opexe2){
     case '+':
         printf("A soma entre %.0f e %.0f equivale a: %.0f",n1exe2,n1exe2,n1exe2+n2exe2);
         break;
     case '-':
-        printf("A subtraÃ§Ã£o entre %.0f e %.0f equivale a: %.0f",n1exe2,n1exe2,n1exe2-n2exe2);
+        printf("A subtração entre %.0f e %.0f equivale a: %.0f",n1exe2,n1exe2,n1exe2-n2exe2);
         break;
     case '/':
         if(n2exe2 == 0 || n1exe2 == 0){
-            printf("NÃ£o Ã© possivel dividir um nÃºmero por 0");
+            printf("Não é possivel dividir um número por 0");
         }else{
-            printf("A divisÃ£o entre %.0f e %.0f equivale a: %.2f",n1exe2,n1exe2,n1exe2/n2exe2);  
+            printf("A divisão entre %.0f e %.0f equivale a: %.2f",n1exe2,n1exe2,n1exe2/n2exe2);  
         }
         break;
     case '*':
-        printf("A multiplicaÃ§Ã£o entre %.0f e %.0f equivale a: %.2f",n1exe2,n1exe2,n1exe2*n2exe2);
+        printf("A multiplicaão entre %.0f e %.0f equivale a: %.2f",n1exe2,n1exe2,n1exe2*n2exe2);
         break;
     default:
-        printf("OperaÃ§Ã£o aritimetrica invalida.");
+        printf("Operação aritimetrica invalida.");
         break;
     }
     break;
 
     case 3:
     
-    printf("Digite 3 nÃºmeros consecutivos e direi qual Ã© o maior dos 3: ");
+    printf("Digite 3 números consecutivos e direi qual é o maior dos 3: ");
     scanf("%i %i %i",&n1,&n2,&n3);
     getchar;
-    if(n1 >= n2 && n1 >= n3){
-        printf("O maior nÃºmero Ã© %i",n1);
-    }else if(n2 >= n1 && n2 >= n3){
-        printf("O maior nÃºmero Ã© %i",n2);
-    }else if(n3 >= n1 && n3 >= n2){
-        printf("O maior nÃºmero Ã© %i",n3);
-    }else{
-        printf("Todos os nÃºmeros sÃ£o iguais");
+    if(n1 > n2 && n1 > n3){
+        printf("O maior número é %i",n1);
+    }else if(n2 > n1 && n2 > n3){
+        printf("O maior número é %i",n2);
+    }else if(n3 > n1 && n3 > n2){
+        printf("O maior número é %i",n3);
+    }else if(n1 == n2 || n1 == n3 || n2 == n3){
+        printf("2 números são iguais");
+    }else {
+        printf("Todos os números são iguais");
     }
 
     break;
@@ -156,7 +158,7 @@ int main(){
     break;
 
     case 6:
-        printf("Digite um nÃºmero, mostrarei o fatorial dele: ");
+        printf("Digite um número, mostrarei o fatorial dele: ");
         scanf("%i",&numexe6);
         getchar;
         printf("%i! = ",numexe6);
@@ -173,37 +175,37 @@ int main(){
 
         do{
 
-        printf("Digite um nÃºmero: ");
+        printf("Digite um número: ");
         scanf("%i",&numeroexe7);
         getchar();
         printf("        Menu\n");
-        printf("1. verificar se o nÃºmero Ã© positivo ou negativo.\n");
-        printf("2. Verificar se o nÃºmero Ã© par ou impar.\n");
+        printf("1. verificar se o número é positivo ou negativo.\n");
+        printf("2. Verificar se o número é par ou impar.\n");
         printf("3. Sair do programa.\n");
-        printf("Escolha sua opÃ§Ã£o: ");
+        printf("Escolha sua opção: ");
         scanf("%i",&opcaoexe7);
 
         switch(opcaoexe7){
             case 1:
                 if(numeroexe7 >= 1){
-                    printf("O nÃºmero %i Ã© positivo.\n",numeroexe7);
+                    printf("O número %i é positivo.\n",numeroexe7);
                 }else{
-                    printf("O nÃºmero %i Ã© negativo.\n",numeroexe7);
+                    printf("O número %i é negativo.\n",numeroexe7);
                 }
 
             break;
             case 2:
                 if (numeroexe7 % 2 == 0){
-                printf("O nÃºmero %i Ã© par.\n",numeroexe7);
+                printf("O número %i é par.\n",numeroexe7);
                 }else{
-                    printf("O nÃºmero %i Ã© impar.\n",numeroexe7);
+                    printf("O número %i é impar.\n",numeroexe7);
                 }
             case 3:
                 printf("Saindo do programa...");
                 break;
                 
             default:
-            printf("OpÃ§Ã£o invalida.");
+            printf("Operação invalida.");
             break;
             }
         } while (opcaoexe7 != 3);
@@ -214,39 +216,40 @@ int main(){
     break;
 
     case 8:
-        for (int i = 1; i <= 4; i++)
-        {
-            printf("Digite sua %iÂº nota: ",i);
+        for (int i = 1; i <= 4; i++){
+            printf("Digite sua %iº nota: ",i);
             scanf("%f",&notaexe8);
+            fflush(stdin);
             mediaexe8 = mediaexe8 + notaexe8;
         }
-        if (mediaexe8 / 4 >= 7){
-            printf("O aluno foi aprovado. Com mÃ©dia %.2f",mediaexe8/4);
+        mediaexe8 = mediaexe8 /4;
+        if (mediaexe8 >= 7){
+            printf("O aluno foi aprovado. Com média %.2f",mediaexe8);
         }else{
-            printf("O aluno foi reprovado. Com mÃ©dia %.2f",mediaexe8/4);
+            printf("O aluno foi reprovado. Com média %.2f",mediaexe8);
         }
 
     break;
 
     case 9:
-        printf("Digite um nÃºmero: ");
-        scanf("%i",&numeroexe09);
+        printf("Digite um número: ");
+        scanf("%f",&numeroexe09);
         getchar();
         printf("Tabuada de soma\n");
         for (int i = 0 ; i <11; i++ ){
-            printf("%i + %i = %i\n",i,numeroexe09,numeroexe09+i);
+            printf("%i + %0.f = %0.f\n",i,numeroexe09,numeroexe09+i);
         }
-        printf("Tabuada de sutraÃ§Ã£o\n");
+        printf("Tabuada de subtração\n");
         for (int i = 0 ; i <11; i++ ){
-            printf("%i - %i = %i\n",i,numeroexe09,numeroexe09-i);
+            printf("%i - %0.f = %0.f\n",i,numeroexe09,numeroexe09-i);
         }
         printf("Tabuada de mult\n");
         for (int i = 0 ; i <11; i++ ){
-            printf("%i x %i = %i\n",i,numeroexe09,numeroexe09*i);
+            printf("%i x %0.f = %0.f\n",i,numeroexe09,numeroexe09*i);
         }
         printf("Tabuada de div\n");
         for (int i = 0 ; i <11; i++ ){
-            printf("%i / %i = %i\n",i,numeroexe09,numeroexe09/i);
+            printf("%i / %0.f = %2.f\n",i,numeroexe09,numeroexe09/i);
         }
 
     break;
@@ -254,10 +257,10 @@ int main(){
     case 10:
 
         do{
-        printf("Digite um nÃºmero: ");
+        printf("Digite um número: ");
         scanf("%i",&numeroexe10);
         somadorexe10 = somadorexe10 + numeroexe10;
-        printf("\nA soma dos nÃºmeros digitados Ã©: %i\n",somadorexe10);
+        printf("\nA soma dos números digitados é: %i\n",somadorexe10);
         printf("Digite 0 para sair.");
 
 
@@ -272,7 +275,7 @@ int main(){
     break;
     
     default:
-    printf("OperaÃ§Ã£o invalida.");
+    printf("Operação invalida.");
         break;
     }
 
