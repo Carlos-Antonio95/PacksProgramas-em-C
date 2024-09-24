@@ -1,0 +1,17 @@
+//Programa que peça as 4 notas bimestrais e mostre a média.
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+int main(){
+    setlocale(LC_ALL,"Portuguese");
+    float nota = 0;
+    for (int  i = 1; i < 5; i++){
+        printf("Digite sua %iº nota: ");
+        scanf("%f",&nota);
+        fflush(stdin);
+        nota += nota;
+    }
+    printf("Sua média bimestral é : %.2f",nota/4);
+
+    return 0;
+}
