@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int fat, num;
+
+int main()
+{
+  setlocale(LC_ALL,"Portuguese");
+printf("Digite um número irei mostrar o fatorial\n");
+scanf("%d", &num) ;
+getchar;
+
+  printf("%i! = ",num);
+  for(fat = 1; num > 1; num = num - 1)
+  {
+      fat = fat * num;
+      printf(" %d x", num);
+  }
+  printf(" 1 = %i",fat);
+
+  
+  return 0;
+}
