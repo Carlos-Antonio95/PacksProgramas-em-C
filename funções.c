@@ -153,6 +153,49 @@ void OperacaoAritimetrica(opAritimetrica aritimetrica){
     }while(aritimetrica.opcao != 0);
 
 }
+//procedimento para veior o maior e menor de X números digitados pelo usuário
+void MaiorMenor(){
+    int maior = 0, menor = 0;
+    int quantidadeNum,opcao;
+    printf("Programa exibir maior e o menor números digitados.\n");
+    printf("Quantos números deseja digitar ?\n");
+    printf("Direi qual o menor e o maior desses números digitados.\n");
+    printf("Quantidade de números: ");
+    scanf("%d",&quantidadeNum);
+    getchar();
+    int vetor[quantidadeNum];
+    for(int i = 0 ; i < quantidadeNum; i++){
+        printf("Digite o %dº número: ",i+1);
+        scanf("%i",&vetor[i]);
+        getchar();
+        if (i == 0){maior = vetor[i];menor = vetor[i];}
+        if(vetor[i] > maior){
+            maior = vetor[i];
+        }else{
+            if (vetor[i] < menor){
+                menor = vetor[i];
+            }
+        }
+
+    }
+    MostrarLinha();
+    printf("\nO maior valor digitado é: %d\n",maior);
+    printf("O menor valor digitado é : %d\n",menor);
+    MostrarLinha();
+    printf("Deseja inciar o programa novamente ? 1 = SIM / 2 = NÃO: ");
+    scanf("%d",&opcao);
+    if(opcao == 1){
+        MaiorMenor();
+    }else if(opcao == 2){
+        printf("Retornando ao menu principal...\n");
+        Sleep(1000);
+    }else{
+        printf("Retornando ao menu principal...\n");
+        Sleep(1000);
+    }
+
+
+}
 
 
 int main(){
@@ -161,13 +204,14 @@ int main(){
     int fato, resultadoo;
     int opcao1; // variavel swhitch case menu principal
     int parar = 0;
-    int n1,n2;
+    int n1,n2,Nmaior,Nmenor;
     while (parar == 0){
 
         system("cls");
         printf("1 = Fatorial\n");
         printf("2 = Operações aritimetricas\n");
         printf("3 = Númerio maior.\n");
+        printf("4 = Número maior e menor.\n");
         printf("0 = SAIR\n");
         printf("Escolha sua opção: ");
         scanf("%d",&opcao1);
@@ -183,6 +227,9 @@ int main(){
             break;
         case 3:
             maior(n1,n2);
+            break;
+        case 4:
+            MaiorMenor();
             break;
         case 0:
             printf("Saindo do programa...\n");
