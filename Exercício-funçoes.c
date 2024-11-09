@@ -82,7 +82,7 @@ int main(){
     printf("Digite o preço: ");
     scanf("%f",&preco);
     getchar();
-    printf("Digite o descoto: ");
+    printf("Digite o desconto: ");
     scanf("%f",&desc);
     total1 = calculardesconto(preco,desc);
     printf("O preço com desconto é: %.2f\n",total1);
