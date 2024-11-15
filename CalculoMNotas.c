@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <locale.h>
+enar as notas.
+Após calcular a média, percorra o array para contar quantas notas estão acima da média.*/#include <locale.h>
 /*Exercício 1: Cálculo da Média de Notas
 Crie um programa que receba as notas de uma turma de estudantes e calcule a média das notas. O programa deve:
 
 Receber a quantidade de estudantes da turma.
 Receber as notas de cada estudante.
 Exibir a média das notas e a quantidade de notas acima da média.
+Exibir a nota de cada aluno, na ordem.
 Dicas:
 
-Use um array para armazenar as notas.
-Após calcular a média, percorra o array para contar quantas notas estão acima da média.*/
+Use um array para armaz
 int main(){
     setlocale(LC_ALL,"Portuguese");
     int QuantEstudantes;
