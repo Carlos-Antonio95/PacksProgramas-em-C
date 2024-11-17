@@ -38,5 +38,5 @@ int main(){
     printf("O menor número é : %d\n",menor);
     printf("A média dos números é: %.2f\n",media);
 
-
+    return 0;
 }
