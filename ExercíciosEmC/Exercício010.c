@@ -33,6 +33,7 @@ int main() {
             for(int i = 0; i < 6; i++){
                 if( i == consulta - 1){
                     printf("Aluno %dº, nome: %s\n", consulta, alunos[i]);
+                    break;
                 }
             }
         }
