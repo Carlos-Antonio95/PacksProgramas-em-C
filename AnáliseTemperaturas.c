@@ -14,8 +14,6 @@ Dicas:
 Use um array para armazenar as temperaturas dos 7 dias.
 Percorra o array para calcular a média e identificar a menor e a maior temperatura.*/
 
-
-
 int main(){
     setlocale(LC_ALL,"Portuguese");
     float temperaturas7d[7];
