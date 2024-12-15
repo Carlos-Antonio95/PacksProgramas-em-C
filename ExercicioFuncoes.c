@@ -53,7 +53,7 @@ int main(){
     float t,d;
     do{
         printf("1 = Calcular potencia\n");
-    }
+    }while(op !=5);
 
 
 
